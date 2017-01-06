@@ -5,5 +5,5 @@ package com.example.nguyendinh.exam_php;
  */
 
 public interface Setting {
-    final static String serverAddress = "http://192.168.0.40/animal/";
+    final static String serverAddress = "http://192.168.0.40:8080/animal/";
 }

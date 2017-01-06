@@ -53,6 +53,7 @@ public class Add_Activity extends AppCompatActivity implements Setting {
         if (v.getId() == R.id.btnAdd) {
             Toast.makeText(Add_Activity.this, "Bat dau upload",Toast.LENGTH_LONG).show();
             new TaiLen().execute(duongdan,edtname.getText().toString());
+            Log.d("name",edtname.getText().toString());
         }
     }
 
@@ -114,7 +115,7 @@ public class Add_Activity extends AppCompatActivity implements Setting {
                 // tham chieu toi file vua chon
                 FileInputStream fileInputStream = new FileInputStream(sourceFile);
                 // ket noki voi web server
-                URL url = new URL(serverAddress+ "upload.php");
+                URL url = new URL(serverAddress+"upload.php");
                 conn = (HttpURLConnection) url.openConnection();
                 conn.setDoInput(true);
                 conn.setDoOutput(true);
