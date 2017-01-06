@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
     {
         if(v.getId() == R.id.btnListMain)
         {
-           // Intent i = new Intent(getApplicationContext(), ListActivity.class);
-            //startActivity(i);
+            Intent i = new Intent(getApplicationContext(), List_Activity.class);
+            startActivity(i);
 
             finish();
         }
