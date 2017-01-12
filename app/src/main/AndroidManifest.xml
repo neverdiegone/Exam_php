@@ -20,7 +20,11 @@
         </activity>
         <activity android:name=".Add_Activity" />
         <activity android:name=".List_Activity" />
-        <activity android:name=".ViewAnimal"></activity>
+        <activity android:name=".ViewAnimal" />
+        <activity
+            android:name=".Menu_Activity"
+            android:label="@string/title_activity_menu_"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
